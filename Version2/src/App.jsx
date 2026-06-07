@@ -21,8 +21,8 @@ const App = () => {
   // Function for adding student into list
   const addStudent = () => {
     if (editId && name.trim() !== "") {
-      setList(
-        list.map((student) =>
+      setList((prev) =>
+        prev.map((student) =>
           student.id === editId ? { ...student, name } : student,
         ),
       );
@@ -44,7 +44,11 @@ const App = () => {
 
   // Function for deleting student from list
   const dltStudent = (dlt_id) => {
-    setList(list.filter((item) => item.id !== dlt_id));
+    if (dlt_id === editId) {
+      setEditId(null);
+      setName("");
+    }
+    setList((prev) => prev.filter((item) => item.id !== dlt_id));
   };
 
   // Edit Function

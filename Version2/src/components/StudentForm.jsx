@@ -8,7 +8,7 @@ const StudentForm = ({ name, setName, addStudent }) => {
         <fieldset className="fieldset">
           <legend className="fieldset-legend text-base">Student Name</legend>
 
-          <input
+          <input 
             type="text"
             className="input input-bordered w-full"
             placeholder="Type here"

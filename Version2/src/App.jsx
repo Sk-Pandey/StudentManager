@@ -20,7 +20,7 @@ const App = () => {
 
   // Function for adding student into list
   const addStudent = () => {
-    if (editId) {
+    if (editId && name.trim() !== "") {
       setList(
         list.map((student) =>
           student.id === editId ? { ...student, name } : student,
@@ -37,6 +37,8 @@ const App = () => {
         ...prev,
       ]);
       setName("");
+    } else {
+      alert("Invalid Name");
     }
   };
 

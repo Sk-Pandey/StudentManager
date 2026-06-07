@@ -1,5 +1,5 @@
 import React from "react";
-const StudentForm = ({ name, setName, addStudent }) => {
+const StudentForm = ({ name, setName, addStudent,editId }) => {
   return (
     <div className="flex justify-center mt-12 px-4">
       <div className="bg-base-200 p-6 rounded-2xl shadow-lg w-full max-w-md">
@@ -8,7 +8,7 @@ const StudentForm = ({ name, setName, addStudent }) => {
         <fieldset className="fieldset">
           <legend className="fieldset-legend text-base">Student Name</legend>
 
-          <input 
+          <input
             type="text"
             className="input input-bordered w-full"
             placeholder="Type here"
@@ -26,7 +26,7 @@ const StudentForm = ({ name, setName, addStudent }) => {
           onClick={addStudent}
           className="btn btn-soft btn-success w-full mt-4"
         >
-          Add Student
+          {editId ? "Update" : "Add Student"}
         </button>
       </div>
     </div>

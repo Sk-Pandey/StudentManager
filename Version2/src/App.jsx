@@ -54,7 +54,12 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <StudentForm name={name} setName={setName} addStudent={addStudent} />
+      <StudentForm
+        name={name}
+        editId={editId}
+        setName={setName}
+        addStudent={addStudent}
+      />
       <Search search={search} setSearch={setSearch} />
       <StudentList
         list={list}

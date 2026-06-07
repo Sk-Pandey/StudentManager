@@ -11,7 +11,7 @@ const StudentList = ({ list, dltStudent, search, edit }) => {
               {list.length}
             </span>
           </p>
-
+ 
           <h2 className="text-2xl font-bold text-center mb-4">Student List</h2>
 
           <div className="space-y-3">

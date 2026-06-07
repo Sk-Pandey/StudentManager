@@ -7,7 +7,7 @@ const StudentForm = ({ name, setName, addStudent,editId }) => {
 
         <fieldset className="fieldset">
           <legend className="fieldset-legend text-base">Student Name</legend>
-
+ 
           <input
             type="text"
             className="input input-bordered w-full"

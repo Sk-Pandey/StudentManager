@@ -11,7 +11,7 @@ const Search = ({ search, setSearch }) => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
- 
+  
         <button className="btn btn-primary join-item">Search</button>
       </div>
     </div>

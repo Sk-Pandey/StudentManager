@@ -1,9 +1,11 @@
 {
-  "name": "version2",
+  "name": "student-manager",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/StudentManager",
+  "homepage": "https://Sk-Pandey.github.io/StudentManager",
+  "author": "Sk-Pandey <https://github.com/Sk-Pandey>",
+  "description": "A React-based student roster manager with live search, add, edit, and delete functionality.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
